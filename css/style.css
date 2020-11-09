@@ -93,3 +93,7 @@
       text-align: center;
       padding: 50px;
   }
+  .avatar img{
+      height: 80px;
+      margin-top: 30px;
+  }
