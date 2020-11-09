@@ -87,4 +87,7 @@
     user-select: none;
   }
 
+  .list-unstyled{
+      text-align: left;
+  }
  
