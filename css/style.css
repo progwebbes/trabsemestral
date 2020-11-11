@@ -101,3 +101,39 @@
   .mapa{
       text-align: center;
   }
+  .fa-times{
+    float: right;
+    cursor: pointer;
+  }
+
+  .meio{
+    margin: 0 auto;
+  }
+  .displayflexx{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .login-carrinho{
+    display: flex;
+  }
+
+  .login-btn, .cart-btn{
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .bg-1{
+    background-image: url(../img/bg1.png);
+    background-attachment: fixed;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+ 
+  .logo-index{
+    height: 70px;
+    margin-bottom: 20px;
+  }
