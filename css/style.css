@@ -137,3 +137,10 @@
     height: 70px;
     margin-bottom: 20px;
   }
+
+  .lh-condensed { line-height: 1.25; }
+
+  .pagamento-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
