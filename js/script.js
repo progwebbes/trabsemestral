@@ -19,4 +19,10 @@ $(document).ready(function() {
         $('#cadastroForm').css('display','none');
     });
 
+    $('.confirmaCompra').click(function(){
+        $('.formularioCarrinho').css('display','none');
+        $('.compraConfirmadaDiv').css('display','block');
+    });
+
+
 });

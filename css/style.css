@@ -136,8 +136,6 @@
   .logo-index{
     height: 70px;
     margin-bottom: 20px;
-<<<<<<< Updated upstream
-=======
   }
 
   .lh-condensed { line-height: 1.25; }
@@ -149,6 +147,7 @@
 
   .fa-user{
     color: black !important;
+    margin-left: 5px;
   }
 
   .container-login{
@@ -166,5 +165,19 @@
 
   #cadastroForm{
     display: none;
->>>>>>> Stashed changes
   }
+
+  .align-center{
+    text-align: center;
+  }
+
+  .login-btn a{
+    color: black;
+  }
+
+  .compraConfirmadaDiv{
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
