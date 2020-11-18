@@ -136,4 +136,35 @@
   .logo-index{
     height: 70px;
     margin-bottom: 20px;
+<<<<<<< Updated upstream
+=======
+  }
+
+  .lh-condensed { line-height: 1.25; }
+
+  .pagamento-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .fa-user{
+    color: black !important;
+  }
+
+  .container-login{
+    text-align: center;
+    width: 300px;
+    margin-top: 100px;
+  }
+
+  .container-sucesso{
+    display: none;
+    margin: 100px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #cadastroForm{
+    display: none;
+>>>>>>> Stashed changes
   }
