@@ -38,50 +38,89 @@ $('document').ready(() => {
         $('#carrinho').click(function () {
             window.location.href = 'login.html';
         });
+        $('.btn-carrinho').click(function () {
+            window.location.href = 'login.html';
+        });
     }
 });
 
 
-localStorage.setItem('Item1nome', 'Plano Básico');
-localStorage.setItem('Item1desc', 'Plano Básico desc');
-localStorage.setItem('Item1preco', 'R$ 39,99');
-
-
-$('.text-muted').click(function () {
-    $('.nome-produto').text(localStorage.getItem('Item1nome'));
-});
+    
 
 $('document').ready(() => {
+
+    
+    
+
+    if(localStorage.getItem('Itemnome') == null || localStorage.getItem('Itemnome') == ''){
+        $('.nome-produto').text('Carrinho vazio');
+        $('.nome-desc').text('Carrinho vazio');
+        $('.nome-preco').text('R$ 00,00');
+
+        $('.confirmaCompra').click(function () {
+            $('.formularioCarrinho').css('display', 'block');
+            $('.compraConfirmadaDiv').css('display', 'none');
+        });
+    } else{
+        $('.nome-produto').text(localStorage.getItem('Itemnome'));
+        $('.nome-desc').text(localStorage.getItem('Itemdesc'));
+        $('.nome-preco').text(localStorage.getItem('Itempreco'));
+    }
+
+    $('.limpar-carrinho').click(function () {
+        localStorage.setItem('Itemnome', '');
+        localStorage.setItem('Itemdesc', '');
+        localStorage.setItem('Itempreco', '');
+
+        location.reload();
+    });
+
+
     if (localStorage.getItem('logado') == "true") {
         
         $('#item1').click(function () {
-            // window.location.href = 'carrinho.html';
 
-
-            $('.nome-produto').text(localStorage.getItem('Item1nome'));
-
- 
-            // $('.nome-produto').text("Plano básico");
-            // $('.nome-desc').text("Item 1 desc");
-            // $('.nome-preco').text("R$ 39,99");
-
+            localStorage.setItem('Itemnome', 'Plano Básico');
+            localStorage.setItem('Itemdesc', 'Plano Básico desc');
+            localStorage.setItem('Itempreco', 'R$ 39,99');
             
+            window.location.href = 'carrinho.html';
 
         });
         $('#item2').click(function () {
-            alert('Item adicionado no carrinho!');
+            localStorage.setItem('Itemnome', 'Plano Premium');
+            localStorage.setItem('Itemdesc', 'Plano Premium desc');
+            localStorage.setItem('Itempreco', 'R$ 49,99');
+            
+            window.location.href = 'carrinho.html';
         });
         $('#item3').click(function () {
-            alert('Item adicionado no carrinho!');
+            localStorage.setItem('Itemnome', 'Plano Blue');
+            localStorage.setItem('Itemdesc', 'Plano Blue desc');
+            localStorage.setItem('Itempreco', 'R$ 79,99');
+            
+            window.location.href = 'carrinho.html';
         });
         $('#item4').click(function () {
-            alert('Item adicionado no carrinho!');
+            localStorage.setItem('Itemnome', 'Plano Individual 1');
+            localStorage.setItem('Itemdesc', 'Plano Básico desc');
+            localStorage.setItem('Itempreco', 'R$ 69,99');
+            
+            window.location.href = 'carrinho.html';
         });
         $('#item5').click(function () {
-            alert('Item adicionado no carrinho!');
+            localStorage.setItem('Itemnome', 'Plano Individual 2');
+            localStorage.setItem('Itemdesc', 'Plano Individual 2 desc');
+            localStorage.setItem('Itempreco', 'R$ 79,99');
+            
+            window.location.href = 'carrinho.html';
         });
         $('#item6').click(function () {
-            alert('Item adicionado no carrinho!');
+            localStorage.setItem('Itemnome', 'Plano Individual 3');
+            localStorage.setItem('Itemdesc', 'Plano Individual 3 desc');
+            localStorage.setItem('Itempreco', 'R$ 89,99');
+            
+            window.location.href = 'carrinho.html';
         });
     } else {
 
