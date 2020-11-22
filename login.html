@@ -37,10 +37,10 @@
         </div>
         <div class="login-carrinho">
             <div class="login-btn">
-                <a href="login.html">Login<i class="fa fa-user"></i></a>
+                <i class="fa fa-user"></i><a href="login.html" id="logado"></a>
             </div>
             <div class="cart-btn">
-                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-shopping-cart" id="carrinho"></i>
             </div>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -54,16 +54,16 @@
         <form class="form-signin">
             <img class="mb-4" src="img/icone.png" alt="" width="72" height="72">
             <h1 class="h3 mb-3 font-weight-normal">Realize o login</h1>
-            <label for="inputEmail" class="sr-only">Login</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Login" required autofocus>
-            <label for="inputPassword" class="sr-only">Senha</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <input type="email" id="email" class="form-control" placeholder="E-mail" required>
+
+            <input type="password" id="senha" class="form-control" placeholder="Senha" required>
+
             <div class="checkbox mb-3">
               <label>
                 Não tenho login, <a href="#" id="cadastrarDisplay">Se cadastrar</a>
               </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+            <button class="btn btn-lg btn-primary btn-block" id="logar">Entrar</button>
             <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
           </form>
     </div>
@@ -72,20 +72,19 @@
         <form class="form-signin">
             <img class="mb-4" src="img/icone.png" alt="" width="72" height="72">
             <h1 class="h3 mb-3 font-weight-normal">Realize o Cadastro</h1>
-            <label for="inputEmail" class="sr-only">Login</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Login" required autofocus>
-            <label for="inputPassword" class="sr-only">Senha</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+
+            <input type="email" id="emailCad" class="form-control" placeholder="E-mail" required>
+
+            <input type="password" id="senhaCad" class="form-control" placeholder="Senha" required>
             
-            <label for="inputPassword" class="sr-only">Confirmar senha</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Confirmar senha" required>
+            <input type="password" id="confirmaCad" class="form-control" placeholder="Confirmar senha" required>
             
             <div class="checkbox mb-3">
               <label>
                 Já tenho login, <a href="#" id="loginDisplay">logar</a>
               </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+            <button class="btn btn-lg btn-primary btn-block" id="cadastrar">Entrar</button>
             <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
           </form>
     </div>
