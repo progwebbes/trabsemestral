@@ -58,8 +58,9 @@ $('document').ready(() => {
         $('.nome-preco').text('R$ 00,00');
 
         $('.confirmaCompra').click(function () {
-            $('.formularioCarrinho').css('display', 'block');
+            $('.formularioCarrinho').css('display', 'flex');
             $('.compraConfirmadaDiv').css('display', 'none');
+            alert('Carrinho vazio!');
         });
     } else{
         $('.nome-produto').text(localStorage.getItem('Itemnome'));
