@@ -27,14 +27,14 @@ $(document).ready(function () {
 });
 
 $('document').ready(() => {
-    if (localStorage.getItem('logado') == "true") {
+    if (localStorage.getItem('session') == "true") {
 
-        $('#logado').text("SAIR");
+        $('#session').text("SAIR");
         $('#carrinho').click(function () {
             window.location.href = 'carrinho.html';
         });
     } else {
-        $('#logado').text("LOGIN");
+        $('#session').text("LOGIN");
         $('#carrinho').click(function () {
             window.location.href = 'login.html';
         });
@@ -76,7 +76,7 @@ $('document').ready(() => {
     });
 
 
-    if (localStorage.getItem('logado') == "true") {
+    if (localStorage.getItem('session') == "true") {
         
         $('#item1').click(function () {
 
@@ -132,13 +132,13 @@ $('document').ready(() => {
 
 
 
-$('#logado').click(() => { localStorage.setItem('logado', 'false') });
+$('#session').click(() => { localStorage.setItem('session', 'false') });
 
 $('#logar').click((e) => {
     var emailLogin = $('#email');
     var senhaLogin = $('#senha');
     if (emailLogin.val() == localStorage.getItem('login') && senhaLogin.val() == localStorage.getItem('senha')) {
-        localStorage.setItem('logado', 'true');
+        localStorage.setItem('session', 'true');
         e.preventDefault();
         window.location.href = 'index.html';
     } else {
